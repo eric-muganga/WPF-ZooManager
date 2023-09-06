@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_ZooManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ZooManager"
+        mc:Ignorable="d"
+        Title="Zoo Manager" Height="400" Width="580" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Zoo List" HorizontalAlignment="Left" Margin="36,17,0,0" VerticalAlignment="Top" Height="24" Width="154"/>
+        <ListBox Name="ListZoos" Margin="36,46,390,176" SelectionChanged="ListZoos_SelectionChanged"/>
+        <Label Content=" Associated Animals List" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="24" Width="154"/>
+        <ListBox Name="ListAssociatedAnimals" Margin="212,46,214,176"/>
+        <ListBox Name="ListAnimals" Margin="391,46,32,62" SelectionChanged="ListAnimals_SelectionChanged"/>
+        <Button Content="Delete Zoo" Click="DeleteZoo_Click" HorizontalAlignment="Left" Margin="36,213,0,0" VerticalAlignment="Top" Height="23" Width="142"/>
+        <Button Click="RemoveAnimal_Click" Content="Remove Animal" HorizontalAlignment="Left" Margin="212,213,0,0" VerticalAlignment="Top" Height="23" Width="140"/>
+        <Button Click="AddZoo_Click" Content="Add Zoo" HorizontalAlignment="Left" Margin="36,300,0,0" VerticalAlignment="Top" Height="23" Width="142"/>
+        <Button Click="UpdateZoo_Click" Content="Update Zoo" HorizontalAlignment="Left" Margin="36,328,0,0" VerticalAlignment="Top" Height="22" Width="142"/>
+        <Button Click="AddAnimal_Click" Content="Add Animal" HorizontalAlignment="Left" Margin="213,300,0,0" VerticalAlignment="Top" Height="23" Width="140"/>
+        <Button Click="UpdateAnimal_Click" Content="Update Animal" HorizontalAlignment="Left" Margin="213,327,0,0" VerticalAlignment="Top" Height="23" Width="140"/>
+        <Button Click="DeleteAnimal_Click" Content="Delete animal" HorizontalAlignment="Left" Margin="391,327,0,0" VerticalAlignment="Top" Height="23" Width="148"/>
+        <Button Click="AddAnimalToZoo" Content="Add animal to Zoo" HorizontalAlignment="Left" Margin="391,18,0,0" VerticalAlignment="Top" Height="23" Width="148"/>
+        <TextBox Name="myTextBox" TextWrapping="Wrap" Text="TextBox" Margin="36,241,214,89"/>
+
+    </Grid>
+</Window>
